@@ -30,8 +30,8 @@ const projects = [
 • Implements RESTful API architecture for complaint submission and status tracking across multiple government portals.
 • Integrated Twilio API for real-time SMS/WhatsApp updates to users and automated authority notifications.
 • Uses MongoDB for structured complaint storage and efficient querying with indexing for performance optimization.`,
-    github: 'https://github.com/yourusername/citizens-advocate',
-    live: 'https://citizens-advocate.vercel.app',
+    github: 'https://github.com/ThisIsHD/citizenadvocatefrontend',
+    live: 'https://citiadvofront.onrender.com/',
     tech: ['React','Express', 'Node.js', 'MongoDB', 'Docker' , 'Kubernetes','OAuth2'],
   },
   {
@@ -40,9 +40,20 @@ const projects = [
 • Integrated NASA Open APIs (APOD, EPIC, and NeoWs) to fetch live astronomical data and enrich celestial object information.
 • Uses React for component-based UI structure and state management of planetary interactions and tooltips.
 • Implements responsive design and optimized asset loading using dynamic imports and lazy loading techniques.`,
-    github: 'https://github.com/yourusername/solar-system-explorer',
-    live: 'https://solar-explorer.vercel.app',
+    github: '',
+    live: 'https://nasa-spaceapps-project.vercel.app/',
     tech: ['Three.js', 'React','Express', 'Node.js' , 'MongoDB', 'NASA API'],
+  },
+  {
+    name: 'DisasterForecast - Disaster Forecast Application',
+    description:
+     `• Built with Flask backend providing RESTful APIs for real-time disaster prediction using AI/ML models trained on historical climate and geospatial data.
+• React frontend integrated with Leaflet.js for interactive map rendering of disaster-prone zones and live alerts.
+• Utilizes external APIs (IMD, NASA, USGS) for real-time earthquake, flood, and cyclone data aggregation.
+• Stores structured data in MongoDB with geospatial indexing for efficient querying and prediction modeling.`,
+    github: 'https://github.com/ThisIsHD/ForecastFrontend',
+    live: 'https://forecast-frontend-iwid.vercel.app/',
+    tech: ['Flask', 'React', 'OpenStreetMaps', 'MongoDB', 'Python AI'],
   },
   {
     name: 'MedAssist- Medical Assistance',
@@ -51,9 +62,20 @@ const projects = [
 • Implements a real-time appointment scheduling system using WebSockets (Socket.io) for instant updates and conflict resolution.
 • Integrated push notifications and email alerts using Firebase Cloud Messaging (FCM) and Nodemailer for timely reminders.
 • Utilizes Tailwind CSS for responsive design and Prisma ORM for type-safe database access and scheduling logic.`,
-    github: 'https://github.com/yourusername/citizens-advocate',
-    live: 'https://citizens-advocate.vercel.app',
+    github: 'https://github.com/ThisIsHD/medassist',
+    live: '',
     tech: ['Next.js'],
+  },
+  {
+    name: 'KartLand - Your ECommerce App',
+    description:
+      `• Built with MERN stack (MongoDB, Express.js, React, Node.js) and styled using Tailwind CSS for a responsive, modern UI.
+• Implements RESTful API architecture for complaint submission and status tracking across multiple government portals.
+• Integrated Twilio API for real-time SMS/WhatsApp updates to users and automated authority notifications.
+• Uses MongoDB for structured complaint storage and efficient querying with indexing for performance optimization.`,
+    github: 'https://github.com/ThisIsHD/Kartland',
+    live: 'https://vocal-jalebi-1fe44f.netlify.app/',
+    tech: ['React','Express', 'Node.js', 'MongoDB', 'Docker' , 'Kubernetes','OAuth2'],
   },
    {
     name: 'MediChain —  Medical Record System',
@@ -65,8 +87,8 @@ const projects = [
 • PostgreSQL/MySQL + MongoDB for metadata & Redis for caching.
 • Deployed on AWS/GCP with autoscaling via Docker and Kubernetes.`,
 
-    github: 'https://github.com/yourusername/medi-chain',
-    live: 'https://medi-chain.in',
+    github: 'https://github.com/ThisIsHD/Medi-Chain',
+    live: 'https://medi-chain-eight.vercel.app/',
     tech: [
       'React',
       'Node.js',
