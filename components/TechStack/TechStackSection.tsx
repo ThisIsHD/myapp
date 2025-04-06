@@ -12,11 +12,20 @@ import {
 
 import {
   SiMongodb, SiPostgresql, SiExpress, SiFastapi, SiDjango, SiJavascript, SiTypescript, SiTailwindcss,
-  SiNextdotjs, SiXampp, SiGooglecloud, SiJquery , SiC, SiCplusplus, SiPostman, SiDotnet, SiFlask,
+  SiNextdotjs, SiXampp, SiGooglecloud, SiJquery, SiC, SiCplusplus, SiPostman, SiDotnet, SiFlask,
   SiVite, SiStreamlit,
 } from 'react-icons/si';
 
-const categories = {
+type Tech = {
+  icon: JSX.Element;
+  name: string;
+  level: number;
+  tooltip: string;
+};
+
+type CategoryType = 'Frontend' | 'Backend' | 'Tools' | 'Languages';
+
+const categories: Record<CategoryType, Tech[]> = {
   Frontend: [
     { icon: <FaReact color="#61dafb" />, name: 'React', level: 90, tooltip: 'JavaScript library for building UIs' },
     { icon: <SiNextdotjs color="#000000" />, name: 'Next.js', level: 85, tooltip: 'React framework for SSR & SSG' },
@@ -57,7 +66,7 @@ const categories = {
 };
 
 export default function TechStackSection() {
-  const [activeTab, setActiveTab] = useState('Frontend');
+  const [activeTab, setActiveTab] = useState<CategoryType>('Frontend');
 
   return (
     <section
@@ -82,7 +91,7 @@ export default function TechStackSection() {
                 ? 'bg-blue-400 text-black border-blue-400'
                 : 'bg-transparent border-white/20 text-white hover:bg-white/10'
             }`}
-            onClick={() => setActiveTab(tab)}
+            onClick={() => setActiveTab(tab as CategoryType)}
             aria-pressed={activeTab === tab}
           >
             {tab}
