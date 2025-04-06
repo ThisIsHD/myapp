@@ -1,11 +1,31 @@
-"use client"
+// app/provider.tsx
+'use client';
 
-import * as React from "react"
-import { ThemeProvider as NextThemesProvider } from "next-themes"
+import { ThemeProvider as NextThemesProvider } from 'next-themes';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 
-export function ThemeProvider({
+export function Provider({ 
   children,
-  ...props
-}: React.ComponentProps<typeof NextThemesProvider>) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
+  attribute = 'class',
+  defaultTheme = 'dark',
+  enableSystem = true,
+  disableTransitionOnChange = false,
+}: {
+  children: React.ReactNode;
+  attribute?: 'class' | 'data-theme'; // More specific type
+  defaultTheme?: string;
+  enableSystem?: boolean;
+  disableTransitionOnChange?: boolean;
+}) {
+  return (
+    <NextThemesProvider
+      attribute={attribute}
+      defaultTheme={defaultTheme}
+      enableSystem={enableSystem}
+      disableTransitionOnChange={disableTransitionOnChange}
+    >
+      {children}
+      <ThemeToggle />
+    </NextThemesProvider>
+  );
 }
