@@ -14,7 +14,7 @@ export default function Navbar() {
         
         {/* 🖋️ Stylish Signature Name */}
         <h1 className="text-3xl font-bold text-white font-[cursive] tracking-wide italic">
-          Himadri Dey
+          My Portfolio
         </h1>
 
         {/* 🧭 Navigation Links */}
