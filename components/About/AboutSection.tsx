@@ -73,7 +73,7 @@ export default function AboutSection() {
                 <FaGithub />
               </a>
               <a
-                href="www.linkedin.com/in/himadri-dey-1505b1236"
+                href="https://www.linkedin.com/in/himadri-dey-1505b1236/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-blue-400 text-2xl transition"
