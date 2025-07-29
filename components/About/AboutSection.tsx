@@ -65,7 +65,7 @@ export default function AboutSection() {
             {/* Social Icons */}
             <div className="flex gap-4 justify-center md:justify-start mb-6">
               <a
-                href="https://github.com/yourgithubusername"
+                href="https://github.com/ThisIsHD"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-blue-400 text-2xl transition"
@@ -73,7 +73,7 @@ export default function AboutSection() {
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/yourlinkedinusername"
+                href="www.linkedin.com/in/himadri-dey-1505b1236"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-blue-400 text-2xl transition"
