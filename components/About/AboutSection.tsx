@@ -114,7 +114,7 @@ export default function AboutSection() {
 
               {/* Download Resume Button */}
               <a
-                href="/Resume_HimadriDey.pdf"
+                href="public/Resume_HimadriDey.pdf"
                 download
                 className="bg-blue-400 hover:bg-blue-500 text-black font-semibold py-2 px-6 rounded-lg transition duration-300"
               >
